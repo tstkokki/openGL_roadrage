@@ -1,0 +1,10 @@
+﻿  controls.cpp
+  objloader.cpp
+  quaternion_utils.cpp
+  tangentspace.cpp
+  text2D.cpp
+  texture.cpp
+  vboindexer.cpp
+..\common\text2D.cpp(40,36): warning C4267:  'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+..\common\text2D.cpp(104,48): warning C4267:  'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  playground.vcxproj -> D:\glStuff\openGLclassTutorial\ogl-master\masterClass\Debug\playground.exe

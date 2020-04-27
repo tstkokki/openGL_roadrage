@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BBC341D4-2DDA-322A-A8D5-06A08BF10893}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>playground</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\glStuff\openGLclassTutorial\ogl-master\masterClass\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">playground.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">playground</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\glStuff\openGLclassTutorial\ogl-master\masterClass\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">playground.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">playground</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\glStuff\openGLclassTutorial\ogl-master\masterClass\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">playground.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">playground</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\glStuff\openGLclassTutorial\ogl-master\masterClass\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">playground.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">playground</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\glStuff\openGLclassTutorial\ogl-master\external\AntTweakBar-1.16\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glm-0.9.7.1;D:\glStuff\openGLclassTutorial\ogl-master\external\glew-1.13.0\include;D:\glStuff\openGLclassTutorial\ogl-master\external\assimp-3.0.1270\include;D:\glStuff\openGLclassTutorial\ogl-master\external\bullet-2.81-rev2613\src;D:\glStuff\openGLclassTutorial\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\glStuff\openGLclassTutorial\ogl-master\external\AntTweakBar-1.16\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glm-0.9.7.1;D:\glStuff\openGLclassTutorial\ogl-master\external\glew-1.13.0\include;D:\glStuff\openGLclassTutorial\ogl-master\external\assimp-3.0.1270\include;D:\glStuff\openGLclassTutorial\ogl-master\external\bullet-2.81-rev2613\src;D:\glStuff\openGLclassTutorial\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\glStuff\openGLclassTutorial\ogl-master\external\AntTweakBar-1.16\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glm-0.9.7.1;D:\glStuff\openGLclassTutorial\ogl-master\external\glew-1.13.0\include;D:\glStuff\openGLclassTutorial\ogl-master\external\assimp-3.0.1270\include;D:\glStuff\openGLclassTutorial\ogl-master\external\bullet-2.81-rev2613\src;D:\glStuff\openGLclassTutorial\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+D:\glStuff\bin\cmake.exe -E copy D:/glStuff/openGLclassTutorial/ogl-master/masterClass/$(Configuration)/playground.exe D:/glStuff/openGLclassTutorial/ogl-master/playground/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;external\glfw-3.1.2\src\Debug\glfw3.lib;external\Debug\GLEW_1130.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/glStuff/openGLclassTutorial/ogl-master/masterClass/Debug/playground.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/glStuff/openGLclassTutorial/ogl-master/masterClass/Debug/playground.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\glStuff\openGLclassTutorial\ogl-master\external\AntTweakBar-1.16\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glm-0.9.7.1;D:\glStuff\openGLclassTutorial\ogl-master\external\glew-1.13.0\include;D:\glStuff\openGLclassTutorial\ogl-master\external\assimp-3.0.1270\include;D:\glStuff\openGLclassTutorial\ogl-master\external\bullet-2.81-rev2613\src;D:\glStuff\openGLclassTutorial\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\glStuff\openGLclassTutorial\ogl-master\external\AntTweakBar-1.16\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glm-0.9.7.1;D:\glStuff\openGLclassTutorial\ogl-master\external\glew-1.13.0\include;D:\glStuff\openGLclassTutorial\ogl-master\external\assimp-3.0.1270\include;D:\glStuff\openGLclassTutorial\ogl-master\external\bullet-2.81-rev2613\src;D:\glStuff\openGLclassTutorial\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\glStuff\openGLclassTutorial\ogl-master\external\AntTweakBar-1.16\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glm-0.9.7.1;D:\glStuff\openGLclassTutorial\ogl-master\external\glew-1.13.0\include;D:\glStuff\openGLclassTutorial\ogl-master\external\assimp-3.0.1270\include;D:\glStuff\openGLclassTutorial\ogl-master\external\bullet-2.81-rev2613\src;D:\glStuff\openGLclassTutorial\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+D:\glStuff\bin\cmake.exe -E copy D:/glStuff/openGLclassTutorial/ogl-master/masterClass/$(Configuration)/playground.exe D:/glStuff/openGLclassTutorial/ogl-master/playground/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;external\glfw-3.1.2\src\Release\glfw3.lib;external\Release\GLEW_1130.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/glStuff/openGLclassTutorial/ogl-master/masterClass/Release/playground.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/glStuff/openGLclassTutorial/ogl-master/masterClass/Release/playground.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\glStuff\openGLclassTutorial\ogl-master\external\AntTweakBar-1.16\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glm-0.9.7.1;D:\glStuff\openGLclassTutorial\ogl-master\external\glew-1.13.0\include;D:\glStuff\openGLclassTutorial\ogl-master\external\assimp-3.0.1270\include;D:\glStuff\openGLclassTutorial\ogl-master\external\bullet-2.81-rev2613\src;D:\glStuff\openGLclassTutorial\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\glStuff\openGLclassTutorial\ogl-master\external\AntTweakBar-1.16\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glm-0.9.7.1;D:\glStuff\openGLclassTutorial\ogl-master\external\glew-1.13.0\include;D:\glStuff\openGLclassTutorial\ogl-master\external\assimp-3.0.1270\include;D:\glStuff\openGLclassTutorial\ogl-master\external\bullet-2.81-rev2613\src;D:\glStuff\openGLclassTutorial\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\glStuff\openGLclassTutorial\ogl-master\external\AntTweakBar-1.16\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glm-0.9.7.1;D:\glStuff\openGLclassTutorial\ogl-master\external\glew-1.13.0\include;D:\glStuff\openGLclassTutorial\ogl-master\external\assimp-3.0.1270\include;D:\glStuff\openGLclassTutorial\ogl-master\external\bullet-2.81-rev2613\src;D:\glStuff\openGLclassTutorial\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+D:\glStuff\bin\cmake.exe -E copy D:/glStuff/openGLclassTutorial/ogl-master/masterClass/$(Configuration)/playground.exe D:/glStuff/openGLclassTutorial/ogl-master/playground/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;external\glfw-3.1.2\src\MinSizeRel\glfw3.lib;external\MinSizeRel\GLEW_1130.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/glStuff/openGLclassTutorial/ogl-master/masterClass/MinSizeRel/playground.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/glStuff/openGLclassTutorial/ogl-master/masterClass/MinSizeRel/playground.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\glStuff\openGLclassTutorial\ogl-master\external\AntTweakBar-1.16\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glm-0.9.7.1;D:\glStuff\openGLclassTutorial\ogl-master\external\glew-1.13.0\include;D:\glStuff\openGLclassTutorial\ogl-master\external\assimp-3.0.1270\include;D:\glStuff\openGLclassTutorial\ogl-master\external\bullet-2.81-rev2613\src;D:\glStuff\openGLclassTutorial\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\glStuff\openGLclassTutorial\ogl-master\external\AntTweakBar-1.16\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glm-0.9.7.1;D:\glStuff\openGLclassTutorial\ogl-master\external\glew-1.13.0\include;D:\glStuff\openGLclassTutorial\ogl-master\external\assimp-3.0.1270\include;D:\glStuff\openGLclassTutorial\ogl-master\external\bullet-2.81-rev2613\src;D:\glStuff\openGLclassTutorial\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\glStuff\openGLclassTutorial\ogl-master\external\AntTweakBar-1.16\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\include;D:\glStuff\openGLclassTutorial\ogl-master\external\glm-0.9.7.1;D:\glStuff\openGLclassTutorial\ogl-master\external\glew-1.13.0\include;D:\glStuff\openGLclassTutorial\ogl-master\external\assimp-3.0.1270\include;D:\glStuff\openGLclassTutorial\ogl-master\external\bullet-2.81-rev2613\src;D:\glStuff\openGLclassTutorial\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+D:\glStuff\bin\cmake.exe -E copy D:/glStuff/openGLclassTutorial/ogl-master/masterClass/$(Configuration)/playground.exe D:/glStuff/openGLclassTutorial/ogl-master/playground/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;external\glfw-3.1.2\src\RelWithDebInfo\glfw3.lib;external\RelWithDebInfo\GLEW_1130.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/glStuff/openGLclassTutorial/ogl-master/masterClass/RelWithDebInfo/playground.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/glStuff/openGLclassTutorial/ogl-master/masterClass/RelWithDebInfo/playground.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\glStuff\openGLclassTutorial\ogl-master\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/glStuff/openGLclassTutorial/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\glStuff\bin\cmake.exe -SD:/glStuff/openGLclassTutorial/ogl-master -BD:/glStuff/openGLclassTutorial/ogl-master/masterClass --check-stamp-file D:/glStuff/openGLclassTutorial/ogl-master/masterClass/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;D:\glStuff\openGLclassTutorial\ogl-master\masterClass\CMakeFiles\3.17.0\CMakeCCompiler.cmake;D:\glStuff\openGLclassTutorial\ogl-master\masterClass\CMakeFiles\3.17.0\CMakeCXXCompiler.cmake;D:\glStuff\openGLclassTutorial\ogl-master\masterClass\CMakeFiles\3.17.0\CMakeRCCompiler.cmake;D:\glStuff\openGLclassTutorial\ogl-master\masterClass\CMakeFiles\3.17.0\CMakeSystem.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeCCompiler.cmake.in;D:\glStuff\share\cmake-3.17\Modules\CMakeCCompilerABI.c;D:\glStuff\share\cmake-3.17\Modules\CMakeCInformation.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeCXXCompiler.cmake.in;D:\glStuff\share\cmake-3.17\Modules\CMakeCXXCompilerABI.cpp;D:\glStuff\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeCompilerIdDetection.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCXXCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCompileFeatures.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCompilerABI.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCompilerId.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineRCCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineSystem.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeFindBinUtils.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeParseImplicitLinkInfo.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeRCCompiler.cmake.in;D:\glStuff\share\cmake-3.17\Modules\CMakeRCInformation.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeSystem.cmake.in;D:\glStuff\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeTestCCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeTestCXXCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeTestCompilerCommon.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeTestRCCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\TI-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CompilerId\VS-10.vcxproj.in;D:\glStuff\share\cmake-3.17\Modules\FindOpenGL.cmake;D:\glStuff\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;D:\glStuff\share\cmake-3.17\Modules\FindPackageMessage.cmake;D:\glStuff\share\cmake-3.17\Modules\Internal\FeatureTesting.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\Windows-Determine-CXX.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\Windows.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\glStuff\openGLclassTutorial\ogl-master\masterClass\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/glStuff/openGLclassTutorial/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\glStuff\bin\cmake.exe -SD:/glStuff/openGLclassTutorial/ogl-master -BD:/glStuff/openGLclassTutorial/ogl-master/masterClass --check-stamp-file D:/glStuff/openGLclassTutorial/ogl-master/masterClass/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;D:\glStuff\openGLclassTutorial\ogl-master\masterClass\CMakeFiles\3.17.0\CMakeCCompiler.cmake;D:\glStuff\openGLclassTutorial\ogl-master\masterClass\CMakeFiles\3.17.0\CMakeCXXCompiler.cmake;D:\glStuff\openGLclassTutorial\ogl-master\masterClass\CMakeFiles\3.17.0\CMakeRCCompiler.cmake;D:\glStuff\openGLclassTutorial\ogl-master\masterClass\CMakeFiles\3.17.0\CMakeSystem.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeCCompiler.cmake.in;D:\glStuff\share\cmake-3.17\Modules\CMakeCCompilerABI.c;D:\glStuff\share\cmake-3.17\Modules\CMakeCInformation.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeCXXCompiler.cmake.in;D:\glStuff\share\cmake-3.17\Modules\CMakeCXXCompilerABI.cpp;D:\glStuff\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeCompilerIdDetection.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCXXCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCompileFeatures.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCompilerABI.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCompilerId.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineRCCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineSystem.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeFindBinUtils.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeParseImplicitLinkInfo.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeRCCompiler.cmake.in;D:\glStuff\share\cmake-3.17\Modules\CMakeRCInformation.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeSystem.cmake.in;D:\glStuff\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeTestCCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeTestCXXCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeTestCompilerCommon.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeTestRCCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\TI-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CompilerId\VS-10.vcxproj.in;D:\glStuff\share\cmake-3.17\Modules\FindOpenGL.cmake;D:\glStuff\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;D:\glStuff\share\cmake-3.17\Modules\FindPackageMessage.cmake;D:\glStuff\share\cmake-3.17\Modules\Internal\FeatureTesting.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\Windows-Determine-CXX.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\Windows.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\glStuff\openGLclassTutorial\ogl-master\masterClass\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/glStuff/openGLclassTutorial/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\glStuff\bin\cmake.exe -SD:/glStuff/openGLclassTutorial/ogl-master -BD:/glStuff/openGLclassTutorial/ogl-master/masterClass --check-stamp-file D:/glStuff/openGLclassTutorial/ogl-master/masterClass/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;D:\glStuff\openGLclassTutorial\ogl-master\masterClass\CMakeFiles\3.17.0\CMakeCCompiler.cmake;D:\glStuff\openGLclassTutorial\ogl-master\masterClass\CMakeFiles\3.17.0\CMakeCXXCompiler.cmake;D:\glStuff\openGLclassTutorial\ogl-master\masterClass\CMakeFiles\3.17.0\CMakeRCCompiler.cmake;D:\glStuff\openGLclassTutorial\ogl-master\masterClass\CMakeFiles\3.17.0\CMakeSystem.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeCCompiler.cmake.in;D:\glStuff\share\cmake-3.17\Modules\CMakeCCompilerABI.c;D:\glStuff\share\cmake-3.17\Modules\CMakeCInformation.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeCXXCompiler.cmake.in;D:\glStuff\share\cmake-3.17\Modules\CMakeCXXCompilerABI.cpp;D:\glStuff\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeCompilerIdDetection.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCXXCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCompileFeatures.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCompilerABI.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCompilerId.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineRCCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineSystem.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeFindBinUtils.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeParseImplicitLinkInfo.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeRCCompiler.cmake.in;D:\glStuff\share\cmake-3.17\Modules\CMakeRCInformation.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeSystem.cmake.in;D:\glStuff\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeTestCCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeTestCXXCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeTestCompilerCommon.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeTestRCCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\TI-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CompilerId\VS-10.vcxproj.in;D:\glStuff\share\cmake-3.17\Modules\FindOpenGL.cmake;D:\glStuff\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;D:\glStuff\share\cmake-3.17\Modules\FindPackageMessage.cmake;D:\glStuff\share\cmake-3.17\Modules\Internal\FeatureTesting.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\Windows-Determine-CXX.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\Windows.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\glStuff\openGLclassTutorial\ogl-master\masterClass\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/glStuff/openGLclassTutorial/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\glStuff\bin\cmake.exe -SD:/glStuff/openGLclassTutorial/ogl-master -BD:/glStuff/openGLclassTutorial/ogl-master/masterClass --check-stamp-file D:/glStuff/openGLclassTutorial/ogl-master/masterClass/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;D:\glStuff\openGLclassTutorial\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;D:\glStuff\openGLclassTutorial\ogl-master\masterClass\CMakeFiles\3.17.0\CMakeCCompiler.cmake;D:\glStuff\openGLclassTutorial\ogl-master\masterClass\CMakeFiles\3.17.0\CMakeCXXCompiler.cmake;D:\glStuff\openGLclassTutorial\ogl-master\masterClass\CMakeFiles\3.17.0\CMakeRCCompiler.cmake;D:\glStuff\openGLclassTutorial\ogl-master\masterClass\CMakeFiles\3.17.0\CMakeSystem.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeCCompiler.cmake.in;D:\glStuff\share\cmake-3.17\Modules\CMakeCCompilerABI.c;D:\glStuff\share\cmake-3.17\Modules\CMakeCInformation.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeCXXCompiler.cmake.in;D:\glStuff\share\cmake-3.17\Modules\CMakeCXXCompilerABI.cpp;D:\glStuff\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeCompilerIdDetection.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCXXCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCompileFeatures.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCompilerABI.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineCompilerId.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineRCCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeDetermineSystem.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeFindBinUtils.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeParseImplicitLinkInfo.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeRCCompiler.cmake.in;D:\glStuff\share\cmake-3.17\Modules\CMakeRCInformation.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeSystem.cmake.in;D:\glStuff\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeTestCCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeTestCXXCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeTestCompilerCommon.cmake;D:\glStuff\share\cmake-3.17\Modules\CMakeTestRCCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\TI-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\glStuff\share\cmake-3.17\Modules\CompilerId\VS-10.vcxproj.in;D:\glStuff\share\cmake-3.17\Modules\FindOpenGL.cmake;D:\glStuff\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;D:\glStuff\share\cmake-3.17\Modules\FindPackageMessage.cmake;D:\glStuff\share\cmake-3.17\Modules\Internal\FeatureTesting.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\Windows-Determine-CXX.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\Windows.cmake;D:\glStuff\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\glStuff\openGLclassTutorial\ogl-master\masterClass\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\controls.cpp" />
+    <ClCompile Include="..\common\objloader.cpp" />
+    <ClCompile Include="..\common\quaternion_utils.cpp" />
+    <ClCompile Include="..\common\tangentspace.cpp" />
+    <ClCompile Include="..\common\text2D.cpp" />
+    <ClCompile Include="..\common\texture.cpp" />
+    <ClCompile Include="..\common\vboindexer.cpp" />
+    <ClCompile Include="D:\glStuff\openGLclassTutorial\ogl-master\playground\playground.cpp" />
+    <ClCompile Include="D:\glStuff\openGLclassTutorial\ogl-master\common\shader.cpp" />
+    <ClInclude Include="..\common\controls.hpp" />
+    <ClInclude Include="..\common\objloader.hpp" />
+    <ClInclude Include="..\common\quaternion_utils.hpp" />
+    <ClInclude Include="..\common\tangentspace.hpp" />
+    <ClInclude Include="..\common\text2D.hpp" />
+    <ClInclude Include="..\common\texture.hpp" />
+    <ClInclude Include="..\common\vboindexer.hpp" />
+    <ClInclude Include="D:\glStuff\openGLclassTutorial\ogl-master\common\shader.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\ZERO_CHECK.vcxproj">
+      <Project>{270A0D73-7A3B-31C1-9AA9-49939521562D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\GLEW_1130.vcxproj">
+      <Project>{C7BF15AB-462D-3975-92EE-594F179A41DC}</Project>
+      <Name>GLEW_1130</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\src\glfw.vcxproj">
+      <Project>{ECC48E02-3EC4-3A70-8D0A-283AE16E07AA}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\playground\StandardShading.fragmentshader" />
+    <None Include="..\playground\StandardShading.vertexshader" />
+    <None Include="..\playground\TextVertexShader.fragmentshader" />
+    <None Include="..\playground\TextVertexShader.vertexshader" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

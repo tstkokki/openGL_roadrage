@@ -1,0 +1,10 @@
+^D:\GLSTUFF\OPENGLCLASSTUTORIAL\OGL-MASTER\MASTERCLASS\CMAKEFILES\991FB41457CB74CC69811019B625B1EC\GENERATE.STAMP.RULE
+setlocal
+D:\glStuff\bin\cmake.exe -SD:/glStuff/openGLclassTutorial/ogl-master -BD:/glStuff/openGLclassTutorial/ogl-master/masterClass --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/glStuff/openGLclassTutorial/ogl-master/masterClass/Tutorials.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

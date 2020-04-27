@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8B0A4883-D947-3B03-B207-ACAD8D06B47C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/glStuff/openGLclassTutorial/ogl-master/external/glfw-3.1.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\glStuff\bin\cmake.exe -SD:/glStuff/openGLclassTutorial/ogl-master -BD:/glStuff/openGLclassTutorial/ogl-master/masterClass --check-stamp-file D:/glStuff/openGLclassTutorial/ogl-master/masterClass/external/glfw-3.1.2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\cmake_uninstall.cmake.in;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\docs\Doxyfile.in;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\src\glfw3.pc.in;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\src\glfw3Config.cmake.in;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\src\glfw_config.h.in;D:\glStuff\share\cmake-3.17\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\glStuff\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake;D:\glStuff\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake;D:\glStuff\share\cmake-3.17\Modules\CheckIncludeFile.c.in;D:\glStuff\share\cmake-3.17\Modules\CheckIncludeFile.cmake;D:\glStuff\share\cmake-3.17\Modules\CheckLibraryExists.cmake;D:\glStuff\share\cmake-3.17\Modules\FindDoxygen.cmake;D:\glStuff\share\cmake-3.17\Modules\FindOpenGL.cmake;D:\glStuff\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;D:\glStuff\share\cmake-3.17\Modules\FindPackageMessage.cmake;D:\glStuff\share\cmake-3.17\Modules\FindThreads.cmake;D:\glStuff\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/glStuff/openGLclassTutorial/ogl-master/external/glfw-3.1.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\glStuff\bin\cmake.exe -SD:/glStuff/openGLclassTutorial/ogl-master -BD:/glStuff/openGLclassTutorial/ogl-master/masterClass --check-stamp-file D:/glStuff/openGLclassTutorial/ogl-master/masterClass/external/glfw-3.1.2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\cmake_uninstall.cmake.in;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\docs\Doxyfile.in;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\src\glfw3.pc.in;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\src\glfw3Config.cmake.in;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\src\glfw_config.h.in;D:\glStuff\share\cmake-3.17\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\glStuff\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake;D:\glStuff\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake;D:\glStuff\share\cmake-3.17\Modules\CheckIncludeFile.c.in;D:\glStuff\share\cmake-3.17\Modules\CheckIncludeFile.cmake;D:\glStuff\share\cmake-3.17\Modules\CheckLibraryExists.cmake;D:\glStuff\share\cmake-3.17\Modules\FindDoxygen.cmake;D:\glStuff\share\cmake-3.17\Modules\FindOpenGL.cmake;D:\glStuff\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;D:\glStuff\share\cmake-3.17\Modules\FindPackageMessage.cmake;D:\glStuff\share\cmake-3.17\Modules\FindThreads.cmake;D:\glStuff\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/glStuff/openGLclassTutorial/ogl-master/external/glfw-3.1.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\glStuff\bin\cmake.exe -SD:/glStuff/openGLclassTutorial/ogl-master -BD:/glStuff/openGLclassTutorial/ogl-master/masterClass --check-stamp-file D:/glStuff/openGLclassTutorial/ogl-master/masterClass/external/glfw-3.1.2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\cmake_uninstall.cmake.in;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\docs\Doxyfile.in;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\src\glfw3.pc.in;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\src\glfw3Config.cmake.in;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\src\glfw_config.h.in;D:\glStuff\share\cmake-3.17\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\glStuff\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake;D:\glStuff\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake;D:\glStuff\share\cmake-3.17\Modules\CheckIncludeFile.c.in;D:\glStuff\share\cmake-3.17\Modules\CheckIncludeFile.cmake;D:\glStuff\share\cmake-3.17\Modules\CheckLibraryExists.cmake;D:\glStuff\share\cmake-3.17\Modules\FindDoxygen.cmake;D:\glStuff\share\cmake-3.17\Modules\FindOpenGL.cmake;D:\glStuff\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;D:\glStuff\share\cmake-3.17\Modules\FindPackageMessage.cmake;D:\glStuff\share\cmake-3.17\Modules\FindThreads.cmake;D:\glStuff\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/glStuff/openGLclassTutorial/ogl-master/external/glfw-3.1.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\glStuff\bin\cmake.exe -SD:/glStuff/openGLclassTutorial/ogl-master -BD:/glStuff/openGLclassTutorial/ogl-master/masterClass --check-stamp-file D:/glStuff/openGLclassTutorial/ogl-master/masterClass/external/glfw-3.1.2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\cmake_uninstall.cmake.in;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\docs\Doxyfile.in;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\src\glfw3.pc.in;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\src\glfw3Config.cmake.in;D:\glStuff\openGLclassTutorial\ogl-master\external\glfw-3.1.2\src\glfw_config.h.in;D:\glStuff\share\cmake-3.17\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\glStuff\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake;D:\glStuff\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake;D:\glStuff\share\cmake-3.17\Modules\CheckIncludeFile.c.in;D:\glStuff\share\cmake-3.17\Modules\CheckIncludeFile.cmake;D:\glStuff\share\cmake-3.17\Modules\CheckLibraryExists.cmake;D:\glStuff\share\cmake-3.17\Modules\FindDoxygen.cmake;D:\glStuff\share\cmake-3.17\Modules\FindOpenGL.cmake;D:\glStuff\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;D:\glStuff\share\cmake-3.17\Modules\FindPackageMessage.cmake;D:\glStuff\share\cmake-3.17\Modules\FindThreads.cmake;D:\glStuff\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\ZERO_CHECK.vcxproj">
+      <Project>{270A0D73-7A3B-31C1-9AA9-49939521562D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\examples\boing.vcxproj">
+      <Project>{0F093ACA-A8EF-390A-AF74-13F678BD1CAB}</Project>
+      <Name>boing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\tests\clipboard.vcxproj">
+      <Project>{C7D4BBC6-F88C-354D-856E-3B4C1EBE9DA8}</Project>
+      <Name>clipboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\tests\cursor.vcxproj">
+      <Project>{A119F517-5FE7-3079-9C61-656784C4FE3F}</Project>
+      <Name>cursor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\tests\empty.vcxproj">
+      <Project>{F89278FD-F2A2-3962-B4BF-112B0920DE3C}</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\tests\events.vcxproj">
+      <Project>{5F09EE4F-BBC6-3A75-9854-2202EDBF80CC}</Project>
+      <Name>events</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\tests\gamma.vcxproj">
+      <Project>{10D3AD10-FE5D-3031-B026-E376C0B15FB0}</Project>
+      <Name>gamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\examples\gears.vcxproj">
+      <Project>{8E3B56B4-3DF7-3FCB-9AD5-946B8CC5E466}</Project>
+      <Name>gears</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\src\glfw.vcxproj">
+      <Project>{ECC48E02-3EC4-3A70-8D0A-283AE16E07AA}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\tests\glfwinfo.vcxproj">
+      <Project>{BF9A3579-D1E5-358F-90E2-12454A3BE599}</Project>
+      <Name>glfwinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\examples\heightmap.vcxproj">
+      <Project>{74D4CC92-1FD5-378E-AD26-35AB779D4F7A}</Project>
+      <Name>heightmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\tests\iconify.vcxproj">
+      <Project>{CCAF0982-3C72-3C12-A93F-FCE3910EF58E}</Project>
+      <Name>iconify</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\tests\joysticks.vcxproj">
+      <Project>{6A51AA8F-3802-3633-8E16-6DB0DC2E036F}</Project>
+      <Name>joysticks</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\tests\monitors.vcxproj">
+      <Project>{BF94F1EF-7C81-3604-81CD-38A5222E2437}</Project>
+      <Name>monitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\tests\msaa.vcxproj">
+      <Project>{521E872D-2488-32F6-B8C9-6E17B50CA992}</Project>
+      <Name>msaa</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\examples\particles.vcxproj">
+      <Project>{5E4E2676-A69C-3B89-9DD1-621917523043}</Project>
+      <Name>particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\tests\reopen.vcxproj">
+      <Project>{85836306-058C-30B9-98BF-C83308B6BE6F}</Project>
+      <Name>reopen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\tests\sharing.vcxproj">
+      <Project>{62B17699-7065-3A3B-82A9-9717C5532CFA}</Project>
+      <Name>sharing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\examples\simple.vcxproj">
+      <Project>{E5271F5B-B618-3FE4-AAF1-954BA48FDDA1}</Project>
+      <Name>simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\examples\splitview.vcxproj">
+      <Project>{B3B36483-9153-387A-A9EF-66D0731E0476}</Project>
+      <Name>splitview</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\tests\tearing.vcxproj">
+      <Project>{2A1A429F-031A-353D-B2BE-209FB1B869C6}</Project>
+      <Name>tearing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\tests\threads.vcxproj">
+      <Project>{B29ACE9F-E01D-36D7-9B5B-1D53FFE54B75}</Project>
+      <Name>threads</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\tests\title.vcxproj">
+      <Project>{AF0750FB-5218-3007-B981-F4821C3B4A5D}</Project>
+      <Name>title</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\examples\wave.vcxproj">
+      <Project>{E4EAB2A4-E542-3306-976D-B391FAFD1304}</Project>
+      <Name>wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\glStuff\openGLclassTutorial\ogl-master\masterClass\external\glfw-3.1.2\tests\windows.vcxproj">
+      <Project>{C7A9DE73-C531-3D38-AA54-1BA08E9EAC58}</Project>
+      <Name>windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
